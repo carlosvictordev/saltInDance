@@ -2,6 +2,7 @@ body{
     padding: 0;
     margin: 0;
     background: rgb(53, 53, 182);
+    overflow-x: hidden;
 }
 *{
     box-sizing: 0;
@@ -38,9 +39,6 @@ nav{
 }
 .hambur{
     display: none;
-    justify-content: start;
-    position: fixed;
-    top: 10px;
     z-index: 3000;
     color: white;
 }
@@ -59,7 +57,7 @@ nav{
     text-decoration: none;
     font-size: 15px;
     padding: 14px 16px;
-     font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
@@ -79,6 +77,9 @@ nav{
 }
 .itens2:hover{
     background: yellow;
+}
+.logo{
+    display: none;
 }
 .container1{
     width: 100%;
@@ -292,7 +293,6 @@ nav{
     animation-timeline: view();
 }
 #txt8{
-    margin-bottom: 30px;
     width: 350px;
     animation: subir 0.3s ease-out;
     animation-timeline: view();
@@ -354,7 +354,7 @@ nav{
 }
 @keyframes entrando1{
  from{
-    translate: -50vw;
+    translate: -10vw;
     opacity: 0.7;
  }
  to{
@@ -402,23 +402,282 @@ nav{
 
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 600px) {
+    * {
+  box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+    .container1{
+        background-image: url(imagens/BACKGROUND.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+        animation: none;
+        padding: 0;
+    }
+    #logo{
+        display: none;
+        animation: none;
+    }
+    #fundo1{
+        display: none;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100px;
+        margin-top: 10px;
+        animation: none;
+    }
+    .logo img{
+        width: 200px;
+    }
+    .display{
+        padding: 0;
+        margin-bottom: 30px;
+        animation: none;
+        margin: 0;
+        width: 0;
+    }
+    #ir{
+        animation: none;
+    }
+    #txt1{
+        width: 260px;
+        animation: none;
+    }
+    #txt2{
+        width: 200px;
+        animation: none;
+    }
+    #botao1{
+        margin-top: 0;
+        animation: none;
+    }
+
+
+
+    .container2{
+        background-image: url(imagens/DOBRA-02-BACKGROUND.png);
+        background-position: 60%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    #fundo2{
+        display: none;
+    }
+    #txt5{
+        width: 200px;
+        animation: none;
+    }
+    #txt3{
+        width: 350px;
+        animation: none;
+    }
+    #txt4{
+        width: 150px;
+        margin-top: 10px;
+        margin-bottom: 100px;
+        animation: none;
+    }
+    .display2{
+        margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    animation: none;
+    }
+
+
+
+    .container3{
+        background-image: url(imagens/DOBRA-3---BACKGROUND.png);
+        background-position: 60%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 650px;
+        margin-top: 10px;
+        padding: 0;
+    }
+    #fundo3{
+        display: none;
+    }
+    .display3{
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+    #txt6{
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 200px;
+    display: block;
+    animation: none;;
+    animation-timeline: view();
+    }
+    #txt7{
+    width: 200px;
+    animation: none;
+    animation-timeline: view();
+    }
+    #txt8{
+    width: 200px;
+    animation: none;
+    animation-timeline: view();
+    }
+    #txt9{
+    width: 200px;
+    animation: none;
+    animation-timeline: view();
+    }
+
+
+
+    .container4{
+        background-image: url(imagens/DOBRA-4---BACKGROUND.png);
+        background-position: 45%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 750px;
+        padding: 0;
+    }
+    #fundo4{
+        display: none;
+    }
+    .display4{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    grid-template-columns: repeat(2,1fr);
+    grid-area: 1/1;
+    padding: 30px;
+    gap: 20px;
+    animation: none;
+    }
+    #txt10{
+        width: 200px;
+        animation: none;
+    }
+    #txt13{
+        width: 200px;
+        margin-left: 20px;
+        animation: none;
+    }
+    #txt14{
+        margin-left: 20px;
+        animation: none;
+    }
+    #botao2{
+        width: 180px;
+        animation: none;
+    }
+    #botao3{
+        width: 180px;
+        margin-left: 40px;
+        animation: none;
+    }
+
+
+
+    .container5{
+        background-image: url(imagens/DOBRA-5---BACKGROUND.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 700px;
+        padding: 0;
+    }
+    .display5{
+        display: flex;
+    justify-content: center;
+    flex-direction: column;
+    grid-area: 1/1;
+    padding: 30px;
+    }
+    #fundo5{
+        display: none;
+    }
+    #txt19{
+        display: none;
+    }
+    #txt15{
+        width: 140px;
+    }
+    #txt16{
+    width: 200px;
+    margin-top: 10px;
+    }
+    #txt17{
+    width: 140px;
+    margin-top: 15px;
+    }
+    #txt18{
+    width: 200px;
+    margin-top: 15px;
+    }
+    #txt20{
+    width: 200px;
+    margin-top: 30px;
+    }
+
+    .container6{
+        background-image: url(imagens/INCRICAO-BACKGROUND.png);
+        background-position: 35%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 700px;
+        padding: 0;
+    }
+    #fundo6{
+        display: none;
+    }
+    #txt23{
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
     .painel{
         display: none;
     }
     .hambur{
-        display: flex;
-        justify-content: start;
+        display: block;
         position: fixed;
+        top: 10px;
     }
     #opcoes{
     display: none;
     justify-content: center;
-}
-#opcoes.ativo{
+    }
+    #opcoes.ativo{
     display: none;
-}
+    }
     .painel2{
         justify-content: center;
+        z-index: 5000;
+        position: fixed;
+    }
+    .painel2 a{
+        text-decoration: none;
+        color: black;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
     }
 }
