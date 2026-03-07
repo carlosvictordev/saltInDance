@@ -1,0 +1,256 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: rgb(38, 38, 59);
+    height: 3000px;
+}
+*{
+    box-sizing: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    justify-content: center;
+
+}
+.painel{
+    position: fixed;
+    top: 20px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 255, 0.2);
+    border-radius: 50px;
+    box-shadow: 1px 1px 5px;
+    width: 1350px;
+    height: auto;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+#opcoes{
+    display: none;
+    justify-content: center;
+}
+#opcoes.ativo{
+    display: none;
+}
+.hambur{
+    display: none;
+    justify-content: start;
+    position: fixed;
+    top: 10px;
+    z-index: 3000;
+    color: white;
+}
+.painel2{
+    position: fixed;
+    background: white;
+    width: 50%;
+}
+
+.itens{
+    color: none;
+    margin: 5px;
+}
+.itens a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 14px 16px;
+}
+.itens :hover{
+    color: rgb(255, 230, 0);
+}
+.itens2{
+    color: rgb(255, 230, 0);
+    margin: 5px;
+}
+.itens2 a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 14px 16px;
+}
+.itens2:hover{
+    background: yellow;
+}
+.container1{
+    width: 100%;
+    display: grid;
+}
+.container2{
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+}
+.container1 img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.container2 img{
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+.display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 350px;
+    grid-area: 1/1;
+
+}
+.fundo{
+    display: grid;
+    grid-area: 1/1;
+}
+.txts1{
+    position: relative;
+    display: block;
+}
+.txts1 img{
+    margin: 20px;
+}
+.txts2{
+    display: block;
+}
+.display2{
+    display: flex;
+    position: relative;
+    grid-area: 1/1;
+    margin-left: 100px;
+    margin-top: 90px;
+    
+    animation: entrando2 1ms ease;
+    animation-timeline: view();
+}
+.txts1-2{
+    display: block;
+}
+.txts1-2 img{
+    margin-top: 20px;
+}
+#logo{
+    width: 100%;
+    max-width:420px;
+    display: block;
+
+    animation: entrando1-2 0.7s ease-out;
+    animation-timing-function: ease-out;
+}
+#ir{
+    width: 100%;
+    max-width: 200px;
+    display: block;
+
+    animation: entrando1 0.7s ease-out;
+    animation-timing-function: ease-out;
+}
+#txt1{
+    width: 100%;
+    max-width: 230px;
+    display: block;
+
+    animation: entrando1 0.7s ease-out;
+    animation-timing-function: ease-out;
+}
+#txt2{
+    position: relative;
+    max-width: 230px;
+    width: 100%;
+    right: 35px;
+    display: block;
+
+    animation: entrando1 0.7s ease-out;
+    animation-timing-function: ease-out;
+}
+#botao1{
+    width: 100%;
+    max-width: 200px;
+    display: block;
+
+    animation: entrando1 0.7s ease-out;
+    animation-timing-function: ease-out;
+}
+#botao1:hover{
+    cursor: pointer;
+}
+#txt3{
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+}
+#txt4{
+    width: 100%;
+    max-width: 200px;
+    position: relative;
+}
+#txt5{
+    width: 200px;
+    position: relative;
+}
+@keyframes entrando1{
+ from{
+    translate: -50vw;
+    opacity: 0.7;
+ }
+ to{
+    translate: 0;
+    opacity: 1;
+ }
+}
+@keyframes entrando1-2{
+ from{
+    translate: 100vw;
+    opacity: 0.7;
+ }
+ to{
+    translate: 0;
+    opacity: 1;
+ }
+}
+
+@keyframes entrando2{
+    from{
+        translate: -10vw;
+        opacity: 0.7;
+    }
+    to{
+        translate: 0;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .painel{
+        display: none;
+    }
+    .hambur{
+        display: flex;
+        justify-content: start;
+        position: fixed;
+    }
+    #opcoes{
+    display: none;
+    justify-content: center;
+}
+#opcoes.ativo{
+    display: none;
+}
+    .painel2{
+        justify-content: center;
+    }
+}
