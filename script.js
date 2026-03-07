@@ -19,7 +19,3 @@ function ativar(){
     });
 
 };
-
-function enviarGmail(){
-    window.location.href = "mailto:carlosvictorlimadecarvalho@gmail.com?subject=Contato%20do%20site&body=Olá,%20gostaria%20de%20mais%20informações"
-}

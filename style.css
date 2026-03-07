@@ -1,8 +1,8 @@
 body{
     padding: 0;
     margin: 0;
-    background: rgb(38, 38, 59);
-    height: 3000px;
+    background: rgb(53, 53, 182);
+    height: 4000px;
 }
 *{
     box-sizing: 0;
@@ -28,6 +28,7 @@ nav{
     justify-items: center;
     justify-content: center;
     z-index: 2000;
+    overflow: auto;
 }
 #opcoes{
     display: none;
@@ -52,7 +53,6 @@ nav{
 
 .itens{
     color: none;
-    margin: 5px;
 }
 .itens a{
     display: inline-block;
@@ -60,6 +60,10 @@ nav{
     text-decoration: none;
     font-size: 15px;
     padding: 14px 16px;
+     font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
 }
 .itens :hover{
     color: rgb(255, 230, 0);
@@ -86,6 +90,27 @@ nav{
     margin-top: 20px;
     display: grid;
 }
+.container3{
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+}
+.container4{
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+}
+.container5{
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+}
+.container6{
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+}
+
 .container1 img{
     width: 100%;
     height: auto;
@@ -96,13 +121,84 @@ nav{
     height: auto;
     display: block; 
 }
+.container3 img{
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+.container4 img{
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+.container5 img{
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+.container6 img{
+    width: 100%;
+    height: auto;
+    display: block; 
+}
 .display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 350px;
+    grid-area: 1/1;
+    margin-top: 0px;
+
+}
+.display2{
+    display: flex;
+    position: relative;
+    grid-area: 1/1;
+    margin-left: 100px;
+    margin-top: 40px;
+    animation: entrando2 1ms ease;
+    animation-timeline: view();
+}
+.display3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0px;
+    grid-area: 1/1;
+    padding: 50px;
+
+}
+.display4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0px;
+    grid-area: 1/1;
+    padding: 100px;
+
+}
+.display5{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 80px;
     grid-template-columns: repeat(2,1fr);
-    gap: 350px;
+    gap: 0px;
+    grid-area: 1/1;
+
+}
+.display6{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0px;
     grid-area: 1/1;
 
 }
@@ -120,16 +216,6 @@ nav{
 .txts2{
     display: block;
 }
-.display2{
-    display: flex;
-    position: relative;
-    grid-area: 1/1;
-    margin-left: 100px;
-    margin-top: 90px;
-    
-    animation: entrando2 1ms ease;
-    animation-timeline: view();
-}
 .txts1-2{
     display: block;
 }
@@ -137,8 +223,7 @@ nav{
     margin-top: 20px;
 }
 #logo{
-    width: 100%;
-    max-width:420px;
+    width: 400px;
     display: block;
 
     animation: entrando1-2 0.7s ease-out;
@@ -154,7 +239,7 @@ nav{
 }
 #txt1{
     width: 100%;
-    max-width: 230px;
+    max-width: 330px;
     display: block;
 
     animation: entrando1 0.7s ease-out;
@@ -183,17 +268,90 @@ nav{
 }
 #txt3{
     width: 100%;
-    max-width: 700px;
+    max-width: 900px;
     position: relative;
 }
 #txt4{
     width: 100%;
-    max-width: 200px;
+    max-width: 250px;
     position: relative;
 }
 #txt5{
-    width: 200px;
+    width: 300px;
     position: relative;
+}
+#txt6{
+    margin-bottom: 30px;
+    width: 350px;
+    display: block;
+    animation: subir 0.3s ease-out;
+    animation-timeline: view();
+}
+#txt7{
+    width: 320px;
+    animation: subir 0.3s ease-out;
+    animation-timeline: view();
+}
+#txt8{
+    margin-bottom: 30px;
+    width: 350px;
+    animation: subir 0.3s ease-out;
+    animation-timeline: view();
+}
+#txt9{
+    animation: subir 0.3s ease-out;
+    animation-timeline: view();
+}
+#txt10{
+    width: 250px;
+}
+#txt11{
+    margin-top: 25px;
+}
+#txt12{
+    margin-top: 25px;
+}
+#txt14{
+    margin-top: 20px;
+}
+#txt15{
+    width: 200px;
+}
+#txt16{
+    width: 250px;
+    margin-top: 30px;
+}
+#txt17{
+    width: 200px;
+    margin-top: 30px;
+}
+#txt18{
+    width: 250px;
+    margin-top: 30px;
+}
+#txt19{
+    width: 250px;
+}
+#txt20{
+    width: 270px;
+    margin-top: 20px;
+}
+#txt22{
+    margin-top: 20px;
+}
+#txt23{
+    width: 450px;
+}
+
+
+#botao2{
+    margin-top: 20px;
+}
+#botao3{
+    margin-top: 20px;
+}
+#botao4{
+    margin-top: 30px;
 }
 @keyframes entrando1{
  from{
@@ -215,6 +373,17 @@ nav{
     opacity: 1;
  }
 }
+@keyframes subir {
+  from {
+    transform: translateY(50px);
+    opacity: 0.5;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 @keyframes entrando2{
     from{
@@ -234,7 +403,7 @@ nav{
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
     .painel{
         display: none;
     }
