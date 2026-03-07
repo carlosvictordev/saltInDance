@@ -45,7 +45,8 @@ nav{
 .painel2{
     position: fixed;
     background: white;
-    width: 50%;
+    width: 80%;
+    border-radius: 30px;
 }
 
 .itens{
@@ -180,7 +181,6 @@ nav{
     gap: 0px;
     grid-area: 1/1;
     padding: 100px;
-
 }
 .display5{
     display: flex;
@@ -260,11 +260,14 @@ nav{
     max-width: 200px;
     display: block;
 
+
+    transition: transform 0.5s ease-in-out;
     animation: entrando1 0.7s ease-out;
     animation-timing-function: ease-out;
 }
 #botao1:hover{
     cursor: pointer;
+    transform: scale(1.2);
 }
 #txt3{
     width: 100%;
@@ -284,34 +287,48 @@ nav{
     margin-bottom: 30px;
     width: 350px;
     display: block;
-    animation: subir 0.3s ease-out;
+    animation: subir 0.5s ease-out;
     animation-timeline: view();
 }
 #txt7{
     width: 320px;
-    animation: subir 0.3s ease-out;
+    animation: subir 0.5s ease-out;
     animation-timeline: view();
 }
 #txt8{
     width: 350px;
-    animation: subir 0.3s ease-out;
+    animation: subir 0.5s ease-out;
     animation-timeline: view();
 }
 #txt9{
-    animation: subir 0.3s ease-out;
+    animation: subir 0.5s ease-out;
     animation-timeline: view();
 }
 #txt10{
     width: 250px;
+    display: block;
+    animation: voltar1 1ms ease;
+    animation-timeline: scroll();
 }
 #txt11{
     margin-top: 25px;
+    animation: voltar1 1ms ease;
+    animation-timeline: scroll();
 }
 #txt12{
     margin-top: 25px;
+    animation: voltar1 1ms ease;
+    animation-timeline: scroll();
+}
+#txt13{
+    display: block;
+    animation: voltar2 1ms ease;
+    animation-timeline: scroll();
 }
 #txt14{
     margin-top: 20px;
+    animation: voltar2 1ms ease;
+    animation-timeline: scroll();
 }
 #txt15{
     width: 200px;
@@ -345,12 +362,27 @@ nav{
 
 #botao2{
     margin-top: 20px;
+    
+    transition: transform 0.5s ease-in-out;
+}
+#botao2:hover{
+    transform: scale(1.2);
 }
 #botao3{
     margin-top: 20px;
+
+    transition: transform 0.5s ease-in-out;
+}
+#botao3:hover{
+    transform: scale(1.2);
 }
 #botao4{
     margin-top: 30px;
+
+    transition: transform 0.5s ease-in-out;
+}
+#botao4:hover{
+    transform: scale(1.2);
 }
 @keyframes entrando1{
  from{
@@ -375,11 +407,33 @@ nav{
 @keyframes subir {
   from {
     transform: translateY(50px);
-    opacity: 0.5;
+    opacity: 0.2;
   }
 
   to {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes voltar1 {
+  from {
+    translate: 10vw;
+    opacity: 0.2;
+  }
+
+  to {
+    translate: 0vw;
+    opacity: 1;
+  }
+}
+@keyframes voltar2 {
+  from {
+    translate: -10vw;
+    opacity: 0.2;
+  }
+
+  to {
+    translate: 0vw;
     opacity: 1;
   }
 }
