@@ -628,7 +628,6 @@ margin-left: 119px;
 @media only screen and (max-width: 600px) {
     * {
   box-sizing: border-box;
-
 }
 body{
     overflow-x: hidden;
@@ -890,9 +889,8 @@ body{
         margin-right: 0;
     }
     .txts2-5{
-        margin-left: 0px;
+        margin-left: 30px;
         padding: 0;
-        margin-right: 20px;
     }
     #fundo5{
         display: none;
@@ -937,7 +935,7 @@ body{
         height: auto;
     }
     #txt26{
-        width: 150px;
+        width: 200px;
         height: auto;
     }
     #txt27{
@@ -966,7 +964,7 @@ body{
         margin: 0;
         padding: 0;
         justify-content: center;
-        margin-right: 180px;
+        margin-right: 120px;
         overflow: hidden;
     }
     #fundo6{
