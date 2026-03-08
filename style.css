@@ -273,9 +273,9 @@ margin-left: 119px;
 }
 #txt2{
     position: relative;
-    max-width: 230px;
-    width: 100%;
-    right: 35px;
+    width: 197px;
+    right: 30px;
+    height: auto;
     display: block;
 
     animation: entrando1 0.7s ease-out;
@@ -676,7 +676,10 @@ body{
         animation: none;
     }
     #txt2{
-        width: 200px;
+        width: 150px;
+        height: auto;
+        margin-right: 0;
+        right: 23px;
         animation: none;
     }
     #botao1{
